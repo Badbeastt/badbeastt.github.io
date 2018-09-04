@@ -31,5 +31,5 @@ if __name__ == "__main__":
     except:
         cgi.print_exception()
     
-    for x in range(0,len(ans_list))
-        browser.find_elements_by_css("input[type='radio'][value='%s']".format(ans_list[x])).click
+    #for x in range(0,len(ans_list))
+        #browser.find_elements_by_css("input[type='radio'][value='%s']".format(ans_list[x])).click
