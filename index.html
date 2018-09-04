@@ -1,17 +1,21 @@
 <html>
     <script>
-        function postData()
-        {
-            $.ajax({
-                type: "POST",
-                url: "/get_form_data.py",
-                success: callbackFunc
-            });
-        }
+        $("#target").click(function(){
 
-        function callbackFunc(response){    //do something with the response
-            console.log(response);
-        }
+ $.ajax({
+      type:'get',
+      url:'/URLToTriggerGetRequestHandler',
+      cache:false,
+      async:'asynchronous',
+      dataType:'json',
+      success: function(data) {
+        console.log(JSON.stringify(data))
+      },
+      error: function(request, status, error) {
+        console.log("Error: " + error)
+      }
+   });
+});
 
         </script>
 <article itemtype="https://schema.org/CreativeWork" itemscope="itemscope" id="post-5" class="post-5 page type-page status-publish ast-article-single">
