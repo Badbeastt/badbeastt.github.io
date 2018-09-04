@@ -8,10 +8,10 @@ def htmlTop():
                 <meta charset="utf-8"/>
                 <title>Answers</title>
             </head>
-            <body>""")
+            <body><p>""")
 
 def htmlTail():
-    print("""</body>
+    print("""</p></body>
         </html>""")
 
 def getData(num):
