@@ -1,21 +1,22 @@
 <html>
-    <script>
+    <script type="text/javascript" language="javascript">
         $("#target").click(function(){
 
- $.ajax({
-      type:'get',
-      url:'/URLToTriggerGetRequestHandler',
-      cache:false,
-      async:'asynchronous',
-      dataType:'json',
-      success: function(data) {
-        console.log(JSON.stringify(data))
-      },
-      error: function(request, status, error) {
-        console.log("Error: " + error)
-      }
-   });
+$.ajax({
+     type:'get',
+     url:'/medium_waala_code.py',
+     cache:false,
+     async:'asynchronous',
+     dataType:'json',
+     success: function(data) {
+       console.log(JSON.stringify(data))
+     },
+     error: function(request, status, error) {
+       console.log("Error: " + error)
+     }
+  });
 });
+
 
         </script>
 <article itemtype="https://schema.org/CreativeWork" itemscope="itemscope" id="post-5" class="post-5 page type-page status-publish ast-article-single">
@@ -25,7 +26,7 @@
             <div class="question-portion">
                 <div class="adjust-width">
                     <div class="question-part">
-                        <form id="question_list" method="post" action="get_form_data.py">
+                        <form id="question_list" method="post" action="medium_waala_code.py">
                             <h2>Start your free test!</h2>
                             <div id="ajax_list_data" class="questions-portion">
                                 <div class="each-question">
